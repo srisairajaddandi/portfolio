@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV Genie — Case Study</title>
+  <title>Case Study</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -30,8 +30,9 @@
   <div class="nav-inner">
     <a href="index.html" class="logo">Sai Raj</a>
     <ul>
-      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#work">Experience</a></li>
       <li><a href="asserts/SRISAIRAJ ADDANDI _ RESUME.pdf" target="_blank">Resume</a></li>
+      <li><a href="index.html#implementation">Implementation</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
@@ -49,13 +50,13 @@
 
       <div class="cs-text">
         <p class="cs-label">Case Study — 01</p>
-        <h1 class="cs-heading">Your Title Here</h1>
-        <p class="cs-para">Write a short intro line or tagline about this project here.</p>
+        <h1 class="cs-heading">BIOMETRIC AUTHENTICATION USING DORSAL HAND VEINS</h1>
+        <p class="cs-para">Secure identity verification through deep learning–based vein pattern recognition</p>
       </div>
 
       <div class="cs-img" style="height:480px">
+        <img src="asserts/case study 1 page 1.jpg" alt="Hero Image">
         <!-- Replace with your image: <img src="asserts/your-image.png" alt="Hero Image"> -->
-        Image 1
       </div>
 
     </div>
@@ -70,12 +71,24 @@
 <section class="cs-section s2">
   <div class="container">
     <p class="cs-label">Overview</p>
-    <h2 class="cs-heading">Your Section Heading</h2>
+    
     <p class="cs-para">
-      Write your overview paragraph here. This section is for a brief description of the
-      project — what it is, who it is for, and why it matters. Keep it clear and concise.
-      Aim for around 5 to 6 lines of content so the section feels balanced and easy to read.
-      You can mention the timeline, your role, or the tools used here as well.
+     Biometric authentication is a security mechanism that
+identifies individuals using unique biological
+characteristics. Traditional systems such as passwords,
+fingerprints, and facial recognition often face challenges
+related to duplication, spoofing, and environmental
+conditions. To overcome these limitations, this project
+introduces a biometric authentication system based on
+dorsal hand vein patterns.
+The proposed system utilizes deep learning and
+Convolutional Neural Networks (CNNs) to recognize and
+classify dorsal hand vein images. Since vein patterns are
+internal, unique, and difficult to replicate, they provide a
+highly secure authentication mechanism. The model was
+trained on a curated vein-image dataset, achieving
+excellent recognition performance across training,
+validation, and testing phases.
     </p>
   </div>
 </section>
@@ -91,24 +104,17 @@
 
       <div class="cs-text">
         <p class="cs-label">Background</p>
-        <h2 class="cs-heading">Your Section Heading</h2>
         <p class="cs-para">
-          Write your first paragraph here. Explain the background or context of this project.
-          What prompted the idea? What gap did you notice?
-        </p>
-        <p class="cs-para">
-          Write your second paragraph here. Go deeper into the background —
-          any research, inspiration, or prior work that shaped your approach.
-        </p>
-        <p class="cs-para">
-          Write your third paragraph here (optional). Describe your initial thinking
-          or the scope of the project.
+        This biometric authentication system offers a highly secure and reliable method of identity verification using dorsal hand vein patterns. It can be effectively used in secure access control systems, banking and financial authentication, government identity verification, military and defense security, healthcare record access, and smart building authentication. The system is contactless, making it hygienic and convenient for users while also being difficult to hack, forge, or duplicate due to the uniqueness of vein patterns. Unlike traditional authentication methods, it provides liveness detection and greater reliability than passwords or fingerprints. By leveraging deep learning techniques, the model can accurately identify individuals with high efficiency and precision. The implementation helps reduce authentication fraud, enhances privacy protection, and improves security in sensitive environments. Furthermore, it enables fast and automated verification processes, making it suitable for real-world applications that require both security and user convenience.
         </p>
       </div>
 
       <div class="cs-img" style="height:440px">
+         <img src="asserts/case study 1 page 2.jpg" alt="Background Image">
+        
+
         <!-- <img src="asserts/your-image.png" alt="Background Image"> -->
-        Image 2
+      
       </div>
 
     </div>
@@ -126,20 +132,20 @@
 
       <div class="cs-text">
         <span class="cs-problem-tag">Problem</span>
-        <h2 class="cs-heading">Your Problem Statement Heading</h2>
         <p class="cs-para">
-          Describe the core problem here. What challenge were users or people facing?
-          Be specific — use data, observations, or real examples if you have them.
-        </p>
-        <p class="cs-para">
-          Continue explaining the problem. What made it difficult to solve?
-          What were the constraints or pain points involved?
+          Existing biometric systems such as fingerprints, facial recognition, iris scanning, and palm prints have several
+limitations. Fingerprints may become damaged due to physical work or intentional tampering. Facial
+recognition systems can be affected by lighting conditions, masks, and spoofing attacks. Iris scanning requires
+specialized hardware and may cause user discomfort.
+These limitations create a need for a more secure, reliable, and non-invasive authentication method. Dorsal
+hand vein biometrics offer a promising solution because vein patterns are internal to the body, unique for
+every individual, and extremely difficult to counterfeit.
         </p>
       </div>
 
       <div class="cs-img" style="height:400px">
         <!-- <img src="asserts/your-image.png" alt="Problem Image"> -->
-        Image 3
+       <img src="asserts/case study 1 page 3.jpg" alt="Background Image">
       </div>
 
     </div>
@@ -157,20 +163,15 @@
 
       <div class="cs-text">
         <span class="cs-solution-tag">Solution</span>
-        <h2 class="cs-heading">Your Solution Heading</h2>
         <p class="cs-para">
-          Describe your solution here. How did you approach solving the problem?
-          What was the key idea or insight that drove your decisions?
-        </p>
-        <p class="cs-para">
-          Go deeper into the solution — the features, the flow, or the technology behind it.
-          Explain why this approach was the right one for the problem.
+          The proposed biometric authentication system follows a structured deep-learning framework consisting of four major stages: data acquisition, data preprocessing, CNN model development, and authentication. In the data acquisition stage, dorsal hand vein images are captured using infrared imaging along with LED illumination to ensure consistent and low-noise image quality. The collected images are then preprocessed by resizing them to 32×32 pixels and normalizing the dataset for efficient training. A Convolutional Neural Network (CNN) is developed to automatically extract meaningful features from the vein patterns. The architecture utilizes convolutional layers for feature extraction, max-pooling layers for dimensionality reduction, and dense layers for classification. During the authentication phase, the trained model identifies users based on their unique vein patterns and performs automatic classification without requiring manual feature engineering. This end-to-end pipeline enables accurate, secure, and efficient biometric verification using deep learning techniques.
+
         </p>
       </div>
 
       <div class="cs-img" style="height:400px">
         <!-- <img src="asserts/your-image.png" alt="Solution Image"> -->
-        Image 4
+        <img src="asserts/case study 1 page 4.jpg" alt="Background Image">
       </div>
 
     </div>
@@ -191,22 +192,22 @@
 
       <div class="cs-img" style="height:320px">
         <!-- <img src="asserts/your-image.png" alt="Gallery Image 1"> -->
-        Image 5
+       <img src="asserts/case study 1 page 5 1.jpg" alt="Background Image">
       </div>
 
       <div class="cs-img" style="height:320px">
         <!-- <img src="asserts/your-image.png" alt="Gallery Image 2"> -->
-        Image 6
+         <img src="asserts/case study 1 page 5 2.jpg" alt="Background Image">
       </div>
 
       <div class="cs-img" style="height:320px">
         <!-- <img src="asserts/your-image.png" alt="Gallery Image 3"> -->
-        Image 7
+        <img src="asserts/case study 1 page 5 3.jpg" alt="Background Image">
       </div>
 
       <div class="cs-img" style="height:320px">
         <!-- <img src="asserts/your-image.png" alt="Gallery Image 4"> -->
-        Image 8
+         <img src="asserts/case study 1 page 5 4.jpg" alt="Background Image">
       </div>
 
     </div>
@@ -224,20 +225,15 @@
 
       <div class="cs-text">
         <p class="cs-label">Outcome</p>
-        <h2 class="cs-heading">Your Section Heading</h2>
         <p class="cs-para">
-          Describe the outcome or result of this project here. What did you achieve?
-          How did users respond? What impact did it have?
-        </p>
-        <p class="cs-para">
-          Any metrics, feedback, or reflections go here. What did you learn?
-          What would you do differently?
+         The developed CNN-based authentication model demonstrated excellent performance during
+training, validation, and testing phases .
         </p>
       </div>
 
       <div class="cs-img" style="height:420px">
         <!-- <img src="asserts/your-image.png" alt="Outcome Image"> -->
-        Image 9
+        <img src="asserts/case study 1 page 6.jpg" alt="Background Image">
       </div>
 
     </div>
@@ -251,16 +247,13 @@
 ================================================ -->
 <section class="cs-section s8">
   <div class="container">
-    <p class="cs-label">Reflection</p>
-    <h2 class="cs-heading">Your Closing Heading</h2>
+    <p class="cs-label">Conclusion</p>
     <p class="cs-para">
-      Write your closing thoughts here. Summarise what this project meant to you —
-      the skills you built, the lessons you took away, and what excites you about
-      the direction it points toward.
-    </p>
-    <p class="cs-para">
-      You can also mention what comes next — future improvements, follow-up projects,
-      or how this experience shapes the work you want to do going forward.
+     The CNN model outperformed several traditional
+approaches and achieved reliable identification
+performance suitable for real-world biometric
+authentication systems, with consistently high scores
+across all four evaluation metrics
     </p>
   </div>
 </section>
